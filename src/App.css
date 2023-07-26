@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app{
+  width: 100vw;
+  height: 100vh;
+  background: #F6F6F6;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.app-title{
+  color: #1F2261;
+font-size: 1.5rem;
+font-weight: 700;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-text{
+  color: #808080;
+font-size: 1rem;
+font-weight: 400;
+margin-top: 0.6rem;
+margin-bottom: 2.5rem;
 }
+
+.converter-block{
+  
+  padding: 1.25rem;
+  
+    border-radius: 1.25rem;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+  }
+  
+  .converter-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .converter-inner::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #E7E7EE;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+  }
+
+  .converter-current{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+  }
+  
+  .country-flag{
+    width: 2.8125rem;
+    height: 2.8125rem;
+    border-radius: 50%;
+  }
+  
+  .converter-select{
+    color: #26278D;
+    font-size: 1.25rem;
+    font-weight: 500;
+    border: none;
+    position: relative;
+    appearance: none;
+  }
+  
+  .converter-select:not([multiple]) {
+    background-image: url('./assets/img/chevron-down.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 1.2em auto;
+    padding-right: 1em;
+  }
+  
+  
+  .converter-input{
+    text-align: right;
+    border-radius: 0.4rem;
+    background: #EFEFEF;
+    width: 8.8rem;
+    padding: 0.6rem;
+    border: none;
+  
+    color: #3C3C3C;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .converter-change-btn{
+    cursor: pointer;
+    width: 2.75rem;
+    height: 2.75rem;
+    background-color: #26278D;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    transition: transform .2s linear;
+    z-index: 2;
+  }
+  
+  .converter-change-btn:hover {
+    transform: rotate(-180deg);
+  }
+  
+  .convert-info{
+    color: #000;
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-top: 1.8rem;
+    
+  }
+
+  .convert-info-rate{
+    margin-bottom: 0.8rem;
+    color: #A1A1A1;
+    font-size: 1rem;
+    font-weight: 400;
+  }
