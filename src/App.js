@@ -77,59 +77,67 @@ const App = () => {
       <div className='converter-block'>
         <div className='converter-inner'>
           <div className='converter-current'>
-            {fromCountryFlag && (
-              <img
-                src={fromCountryFlag}
-                alt='From Country Flag'
-                className='country-flag'
+            <h3 className='converter-current-title'>From:</h3>
+            <div className='converter-current-item'>
+              {fromCountryFlag && (
+                <img
+                  src={fromCountryFlag}
+                  alt='From Country Flag'
+                  className='country-flag'
+                />
+              )}
+              <select
+                className='converter-select'
+                name='fromCurrency'
+                value={fromCurrency}
+                onChange={handleCurrencyChange}>
+                {Object.entries(currencies).map(([currency, rate]) => (
+                  <option key={currency} value={currency}>
+                    {currency}
+                  </option>
+                ))}
+              </select>
+              <input
+                className='converter-input'
+                type='number'
+                value={amount}
+                onChange={handleAmountChange}
               />
-            )}
-            <select
-              className='converter-select'
-              name='fromCurrency'
-              value={fromCurrency}
-              onChange={handleCurrencyChange}>
-              {Object.entries(currencies).map(([currency, rate]) => (
-                <option key={currency} value={currency}>
-                  {currency}
-                </option>
-              ))}
-            </select>
-            <input
-              className='converter-input'
-              type='number'
-              value={amount}
-              onChange={handleAmountChange}
-            />
+            </div>
           </div>
           <button className='converter-change-btn' onClick={handleExchange}>
             <img src={arrows} alt='icon' />
           </button>
+
           <div className='converter-current'>
-            {toCountryFlag && (
-              <img
-                src={toCountryFlag}
-                alt='To Country Flag'
-                className='country-flag'
+            <h3 className='converter-current-title'>To:</h3>
+            <div className='converter-current-item'>
+              {toCountryFlag && (
+                <img
+                  src={toCountryFlag}
+                  alt='To Country Flag'
+                  className='country-flag'
+                />
+              )}
+              <select
+                className='converter-select'
+                name='toCurrency'
+                value={toCurrency}
+                onChange={handleCurrencyChange}>
+                {Object.entries(currencies).map(([currency, rate]) => (
+                  <option key={currency} value={currency}>
+                    {currency}
+                  </option>
+                ))}
+              </select>
+              <input
+                className='converter-input readonly'
+                type='number'
+                value={convertedAmount}
+                onChange={handleAmountChange}
+                readOnly
               />
-            )}
-            <select
-              className='converter-select'
-              name='toCurrency'
-              value={toCurrency}
-              onChange={handleCurrencyChange}>
-              {Object.entries(currencies).map(([currency, rate]) => (
-                <option key={currency} value={currency}>
-                  {currency}
-                </option>
-              ))}
-            </select>
-            <input
-              className='converter-input'
-              type='number'
-              value={convertedAmount}
-              onChange={handleAmountChange}
-            />
+            </div>
           </div>
         </div>
       </div>

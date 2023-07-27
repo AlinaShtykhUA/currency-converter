@@ -51,10 +51,15 @@ margin-bottom: 2.5rem;
     z-index: 1;
   }
 
-  .converter-current{
+  .converter-current-item{
     display: flex;
     align-items: center;
     gap: .8rem;
+  }
+
+  .converter-current-title{
+    font-size: 1rem;
+    margin-bottom: .5rem;
   }
   
   .country-flag{
@@ -118,7 +123,7 @@ margin-bottom: 2.5rem;
     font-size: 1.125rem;
     font-weight: 500;
     margin-top: 1.8rem;
-    
+    text-align: center;
   }
 
   .convert-info-rate{
@@ -126,4 +131,14 @@ margin-bottom: 2.5rem;
     color: #A1A1A1;
     font-size: 1rem;
     font-weight: 400;
+  }
+
+  .readonly{
+    cursor: auto;
+    background-color: rgba(0, 0, 0, 0.02);
+  }
+
+  .readonly:focus{
+    outline: none;
+    
   }
