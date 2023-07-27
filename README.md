@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# Документація Currency Converter
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Currency Converter - це додаток, який дозволяє конвертувати суми між різними валютами на основі останніх обмінних курсів.
+<img width="662" alt="Знімок екрана 2023-07-26 о 17 09 09" src="https://github.com/AlinaShtykhUA/currency-converter/assets/39155762/90f40925-6971-4287-9988-b836335ae069">
 
-## Available Scripts
+Вимоги:
+Перед тим як почати використовувати додаток, переконайтесь, що у вас є активне з'єднання з Інтернетом, так як програма отримує останні обмінні курси з зовнішнього джерела.
 
-In the project directory, you can run:
+Встановлення:
+Для встановлення програми "Currency Converter" дотримайтесь наступних кроків:
 
-### `npm start`
+Скачайте архів з додатком на свій комп'ютер.
+Розпакуйте архів у бажаній локації.
+Відкрийте командний рядок (термінал) та перейдіть до директорії додатку.
+Введіть команду npm install для встановлення залежностей.
+Використання
+Після успішного встановлення додатку "Currency Converter", ви можете запустити його з командного рядка (терміналу) за допомогою команди npm start.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Після запуску додатку, відкриється веб-сторінка, на якій ви побачите графічний інтерфейс програми:
+Виберіть валюту з розкривних списків для "From" (з якої ви хочете конвертувати) та "To" (в яку ви хочете конвертувати).
+Введіть суму, яку ви хочете конвертувати, у текстовому полі "Amount".
+Результат конвертації відобразиться автоматично у текстовому полі "Converted Amount".
+Також, ви можете обміняти валюти місцями, натиснувши кнопку зі стрілками (обмін) між валютами.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Важливі зауваження
+Дані обмінних курсів отримуються з зовнішнього джерела, тому для коректної роботи додатку необхідне активне з'єднання з Інтернетом.
+При виборі валют із розкривних списків, будьте впевнені, що обираєте правильні коди валют (наприклад, "USD" для долара США).
+Деякі валюти можуть не підтримуватись зовнішнім джерелом, тому результати можуть бути обмеженими для деяких менш популярних валют.
+Заключні слова
+Цей "Currency Converter" дозволяє легко перетворювати суми між різними валютами та дізнаватись актуальні обмінні курси. Використовуйте його для швидких обчислень конвертацій і дізнавайтесь актуальні курси обміну грошей.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
